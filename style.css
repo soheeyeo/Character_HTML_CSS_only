@@ -1,0 +1,1198 @@
+/* animation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bear {
+    from {
+        transform: rotate(65deg);
+    }
+    to {
+        transform: rotate(74deg) ;
+    }
+}
+
+/* setting */
+:root {
+    --skin: #fff3e1;
+    --skin-shadow: #ffe6bf;
+    --hair: #80512F;
+    --pink: #feccff;
+    --brow: #a46933;
+    --lash: #512b0f;
+    --nose: #ffebcd;
+    --nose-shadow: #ffddaa;
+    --lips: #ffb4b4;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* layout */
+/* design */
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.girl {
+    margin: 98px auto 0 auto;
+    width: 400px;
+    height: 380px;
+}
+
+.girl:hover {
+    transform: rotate(-3deg);
+    transition: all 0.5s ease-in-out;
+}
+
+/* body */
+.girl .body {
+    position: relative;
+}
+
+.girl .body .shoe {
+    position: absolute;
+    background-color: #f091db;
+    width: 65px;
+    height: 58px;
+}
+
+.girl .body .shoe.left {
+    top: 410px;
+    left: 82px;
+    border-radius: 0px 0px 20px 35px;
+    transform: rotate(26deg);
+}
+
+.girl .body .shoe.right {
+    top: 410px;
+    left: 180px;
+    border-radius: 0px 0px 35px 20px;
+    transform: rotate(-26deg);
+}
+
+.girl .body .cloth {
+    position: absolute;
+    left: 50px;
+}
+
+.girl .body .cloth.back {
+    width: 230px;
+    height: 150px;
+    top: 290px;
+    background-color: #dea6df;
+    border-radius: 100px 100px 50px 50px;
+}
+
+.girl .body .cloth.front {
+    width: 230px;
+    height: 123px;
+    top: 316px;
+    background-color: var(--pink);
+    border-radius: 100px 100px 50px 50px;
+}
+
+.girl .body .neck {
+    position: absolute;
+    width: 97px;
+    height: 43px;
+    top: 295px;
+    left: 120px;
+    background-color: var(--nose);
+    border-radius: 0px 0px 45px 50px;
+    transform: rotate(10deg);
+}
+
+/* face */
+/* face setting */
+.girl .face {
+    position: relative;
+}
+
+.girl .face .ear {
+    position: absolute;
+    width: 30px;
+    height: 68px;
+}
+
+
+.girl .face .shade.fa {
+    position: absolute;
+    width: 273px;
+    height: 325px;
+    left: 63px;
+    border-radius: 150px;
+    transform: rotate(30deg);
+}
+
+.girl .face .shade.cheek {
+    position: absolute;
+    width: 198px;
+    height: 198px;
+    border-radius: 50%;
+}
+
+.girl .face .front.fa {
+    position: absolute;
+    width: 264px;
+    height: 323px;
+    left: 68px;
+    border-radius: 150px;
+    transform: rotate(30deg);
+}
+
+.girl .face .front.cheek {
+    position: absolute;
+    width: 191px;
+    height: 191px;
+    border-radius: 50%;
+}
+
+.girl .face .blush {
+    position: absolute;
+    width: 68px;
+    height: 31px;
+    background: rgba(255, 194, 204, 0.15);
+    border-radius: 50px;
+}
+
+/* face design */
+.girl .face .ear.left {
+    border-radius: 58% 42% 0% 100% / 35% 32% 68% 65%;
+    left: 60px;
+    top: 60px;
+    background-color: #f2dbb9;
+    transform: rotate(20deg);
+}
+
+.girl .face .ear.right {
+    border-radius: 58% 42% 100% 0% / 30% 32% 68% 70%;
+    right: 60px;
+    top: 200px;
+    background-color: #ffeed3;
+    transform: rotate(30deg);
+}
+
+.girl .face .shade {
+    background-color: var(--skin-shadow);
+}
+
+.girl .face .shade.cheek.left {
+    top: 75px;
+    left: 40px;
+}
+
+.girl .face .shade.cheek.right {
+    top: 125px;
+    right: 85px;
+}
+
+.girl .face .hair-left {
+    position: absolute;
+    width: 110px;
+    height: 48px;
+    background-color: var(--hair);
+    border-radius: 47% 53% 0% 100% / 100% 0% 100% 0%;
+    transform: rotate(-30deg);
+    left: 90px;
+}
+
+.girl .face .shade.temple {
+    position: absolute;
+    width: 75px;
+    height: 35px;
+    left: 92px;
+    top: 35px;
+    border-radius: 49% 51% 0% 100% / 100% 100% 0% 0%;
+    transform: rotate(-35deg);
+}
+
+.girl .face .front {
+    background-color: var(--skin);
+}
+
+.girl .face .front.cheek.left {
+    top: 78px;
+    left: 45px;
+}
+
+.girl .face .front.cheek.right {
+    top: 128px;
+    right: 90px;
+}
+
+.girl .face .blush.left {
+    top: 164px;
+    left: 55px;
+    transform: rotate(40deg);
+}
+
+.girl .face .blush.right {
+    top: 244px;
+    right: 122px;
+    transform: rotate(23deg);
+}
+
+/* face end */
+
+/* hair */
+/* hair setting */
+.girl .hair {
+    position: relative;
+}
+
+.girl .hair .bun {
+    position: absolute;
+    width: 73px;
+    height: 67px;
+    border-radius: 35px;
+    background-color: var(--hair);
+}
+
+.girl .hair .tie {
+    position: absolute;
+    background-color: var(--pink);
+    width: 56px;
+    height: 44px;
+    border-radius: 35px;
+    transform: rotate(83deg);
+}
+
+.girl .hair .hair-right {
+    position: absolute;
+    background-color: var(--hair);
+}
+
+.girl .hair .highlight {
+    position: absolute;
+    width: 91px;
+    height: 20px;
+    top: 70px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 50px 50px 0px 0px;
+    transform: rotate(60deg);
+}
+
+.girl .hair .bang {
+    position: absolute;
+    background-color: var(--hair);
+}
+
+.girl .hair .shadow {
+    position: absolute;
+    background-color: #000;
+}
+
+/* hair design */
+.girl .hair .bun.left {
+    top: -67px;
+    left: 140px;
+    transform: rotate(80deg);
+}
+
+.girl .hair .bun.right {
+    top: 44px;
+    right: -20px;
+    transform: rotate(70deg);
+}
+
+.girl .hair .tie.left {
+    top: -26px;
+    left: 155px;
+    transform: rotate(-13deg);
+}
+
+.girl .hair .tie.right {
+    top: 73px;
+    right: 29px;
+    transform: rotate(60deg);
+}
+
+.girl .hair .hair-right.small {
+    width: 68px;
+    height: 50px;
+    top: 118px;
+    right: 16px;
+    border-radius: 0px 50px 0px 0px;
+    transform: rotate(70deg);
+}
+
+.girl .hair .hair-right.main {
+    width: 120px;
+    height: 40px;
+    top: 60px;
+    right: 8px;
+    border-radius: 80px 80px 10px 10px;
+    transform: rotate(60deg);
+}
+
+.girl .hair .highlight.cover {
+    width: 107px;
+    height: 27px;
+    top: 75px;
+    right: 18px;
+    background-color: var(--hair);
+    border-radius: 30px 30px 0px 0px;
+}
+
+.girl .hair .bang.big {
+    width: 111px;
+    height: 103px;
+    border-radius: 60px;
+}
+
+.girl .hair .bang.small {
+    width: 97px;
+    height: 100px;
+    border-radius: 60px;
+}
+
+.girl .hair .shadow.big {
+    width: 111px;
+    height: 104px;
+    border-radius: 60px;
+}
+
+.girl .hair .shadow.small {
+    width: 104px;
+    height: 98px;
+    border-radius: 50px;
+}
+
+.girl .hair .bang.big.a {
+    top: 2px;
+    left: 200px;
+    transform: rotate(100deg);
+}
+
+.girl .hair .shadow.small.a {
+    top: 16px;
+    left: 190px;
+    transform: rotate(195deg);
+}
+
+.girl .hair .bang.big.b {
+    top: 8px;
+    left: 184px;
+    transform: rotate(80deg);
+}
+
+.girl .hair .shadow.small.b {
+    top: 14px;
+    left: 180px;
+    transform: rotate(19deg);
+}
+
+.girl .hair .bang.big.c {
+    top: 5px;
+    left: 176px;
+    transform: rotate(95deg);
+}
+
+.girl .hair .skin {
+    position: absolute;
+    width: 112px;
+    height: 104px;
+    top: 10px;
+    left: 160px;
+    background-color: var(--skin);
+    border-radius: 80px;
+    transform: rotate(190deg);
+}
+
+.girl .hair .bang.big.d {
+    top: -10px;
+    left: 165px;
+    transform: rotate(-30deg);
+}
+
+.girl .hair .shadow.big.a {
+    top: -14px;
+    left: 150px;
+    transform: rotate(20deg);
+}
+
+.girl .hair .bang.big.e {
+    top: -16px;
+    left: 150px;
+    transform: rotate(75deg);
+}
+
+.girl .hair .shadow.big.b {
+    top: -16px;
+    left: 135px;
+    transform: rotate(180deg);
+}
+
+.girl .hair .bang.big.f {
+    top: -20px;
+    left: 135px;
+    transform: rotate(60deg);
+}
+
+.girl .hair .shadow.small.c {
+    top: -10px;
+    left: 123px;
+}
+
+.girl .hair .bang.small.a {
+    top: -12px;
+    left: 128px;
+    transform: rotate(19deg);
+}
+
+.girl .hair .shadow.small.d {
+    width: 75px;
+    height: 71px;
+    border-radius: 35px;
+    top: 3px;
+    left: 132px;
+    transform: rotate(45deg);
+}
+
+.girl .hair .bang.small.b {
+    width: 86px;
+    height: 88px;
+    top: -10px;
+    left: 120px;
+    border-radius: 53px 53px 53px 10px;
+    transform: rotate(10deg);
+}
+
+/* hair end */
+
+/* eyebrows */
+/* eyebrows setting */
+.girl .eyebrows {
+    position: relative;
+}
+
+.girl .eyebrows .skin {
+    position: absolute;
+    background-color: var(--skin);
+}
+
+.girl .eyebrows .brow {
+    position: absolute;
+    width: 71px;
+    height: 23px;
+    background-color: var(--brow);
+}
+
+.girl .eyebrows .brow-bone {
+    position: absolute;
+    width: 78px;
+    height: 23px;
+    background-color: var(--skin);
+}
+
+.girl .eyebrows .fro {
+    position: absolute;
+    width: 12px;
+    height: 14px;
+    border-radius: 6px;
+    background-color: var(--brow);
+}
+
+/* eyebrow_left */
+.girl .eyebrows .skin.left {
+    width: 134px;
+    height: 26px;
+    top: 75px;
+    left: 98px;
+    border-radius: 45px 10px 0px 0px;
+    transform: rotate(30deg);
+}
+
+.girl .eyebrows .brow.left {
+    top: 73px;
+    left: 115px;
+    border-radius: 35px 0px 0px 0px;
+    transform: rotate(26deg);
+}
+
+.girl .eyebrows .brow-bone.left {
+    top: 84px;
+    left: 107px;
+    border-radius: 40px 0px 0px 0px;
+    transform: rotate(26deg);
+}
+
+.girl .eyebrows .fro.left {
+    top: 87px;
+    left: 180px;
+}
+
+/* eyebrow_right */
+.girl .eyebrows .skin-right-side {
+    position: absolute;
+    width: 86px;
+    height: 25px;
+    right: 32px;
+    top: 138px;
+    border-radius: 43px 43px 0px 0px;
+    transform: rotate(60deg);
+    background-color: var(--skin-shadow);
+}
+
+.girl .eyebrows .skin.right {
+    width: 95px;
+    height: 35px;
+    right: 30px;
+    top: 122px;
+    border-radius: 0 80px 0px 0px;
+    transform: rotate(58deg);
+}
+
+.girl .eyebrows .brow.right {
+    top: 150px;
+    right: 74px;
+    border-radius: 0px 35px 0px 0px;
+    transform: rotate(38deg);
+}
+
+.girl .eyebrows .brow-bone.right {
+    top: 157px;
+    right: 78px;
+    border-radius: 0px 40px 0px 0px;
+    transform: rotate(35deg);
+}
+
+.girl .eyebrows .fro.right {
+    top: 127px;
+    right: 128px;
+    transform: rotate(60deg);
+}
+
+/* eyebrows end*/
+
+/*eyes*/
+/* eyes setting */
+.girl .eyes {
+    position: relative;
+}
+
+.girl .eyes .eyelash {
+    position: absolute;
+    width: 18px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--lash);
+}
+
+.girl .eyes .lash-skin {
+    position: absolute;
+    width: 22px;
+    height: 21px;
+    border-radius: 10px;
+    background-color: var(--skin);
+}
+
+.girl .eyes .double-line {
+    position: absolute;
+    width: 63px;
+    height: 60px;
+    background-color: var(--lash);
+}
+
+.girl .eyes .eye-skin {
+    position: absolute;
+    width: 68px;
+    height: 63px;
+    background-color: #f7e6cd;
+}
+
+.girl .eyes .eye-line {
+    position: absolute;
+    width: 67px;
+    height: 56px;
+    background-color: var(--lash);
+}
+
+.girl .eyes .white {
+    position: absolute;
+    width: 64px;
+    height: 52px;
+    background-color: #fff;
+}
+
+.girl .eyes .pupil-shadow {
+    position: absolute;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+}
+
+.girl .eyes .pupil {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #774725;
+    border-radius: 50%;
+}
+
+.girl .eyes .glitter {
+    position: absolute;
+    width: 18px;
+    height: 23px;
+    background-color: #f4f4f4;
+    border-radius: 18px 0px 0px 0px;
+}
+
+.girl .eyes .pupil-black {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.girl .eyes .glitter-small {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.girl .eyes .tear {
+    position: absolute;
+    width: 30px;
+    height: 18px;
+    background: rgba(185, 225, 227, 0.8);
+    border-radius: 15px;
+    animation: fade-in 3s 1s infinite ease-out alternate;
+}
+
+.girl .eyes .tear.clear {
+    position: absolute;
+    width: 15px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+}
+
+/* eye_left */
+.girl .eyes .eyelash.left-a {
+    top: 113px;
+    left: 84px;
+    transform: rotate(93deg);
+}
+
+.girl .eyes .lash-skin.left-a {
+    top: 105px;
+    left: 85px;
+    transform: rotate(-90deg);
+}
+
+.girl .eyes .eyelash.left-b {
+    top: 109px;
+    left: 90px;
+    transform: rotate(40deg);
+}
+
+.girl .eyes .lash-skin.left-b {
+    top: 100px;
+    left: 90px;
+    transform: rotate(-125deg);
+}
+
+.girl .eyes .eyelash.left-c {
+    top: 105px;
+    left: 96px;
+    transform: rotate(50deg);
+}
+
+.girl .eyes .lash-skin.left-c {
+    top: 96px;
+    left: 97px;
+    transform: rotate(-100deg);
+}
+
+.girl .eyes .double-line.left {
+    border-radius: 70px 100px 30px 50px;
+    top: 109px;
+    left: 96px;
+    transform: rotate(40deg);
+}
+
+.girl .eyes .eye-skin.left {
+    top: 110px;
+    left: 93px;
+    border-radius: 70px 100px 30px 50px;
+    transform: rotate(40deg);
+}
+
+.girl .eyes .eye-line.left {
+    top: 115px;
+    left: 90px;
+    border-radius: 70px 100px 30px 50px;
+    transform: rotate(40deg);
+}
+
+.girl .eyes .white.left {
+    top: 120px;
+    left: 92px;
+    border-radius: 70px 100px 30px 50px;
+    transform: rotate(40deg);
+}
+
+.girl .eyes .pupil-shadow.big {
+    width: 48px;
+    height: 45px;
+}
+
+.girl .eyes .pupil-shadow.big.left {
+    top: 125px;
+    left: 100px;
+}
+
+.girl .eyes .pupil-shadow.small {
+    width: 30px;
+    height: 28px;
+}
+
+.girl .eyes .pupil-shadow.small.left {
+    top: 150px;
+    left: 116px;
+}
+
+.girl .eyes .pupil.left {
+    top: 129px;
+    left: 105px;
+}
+
+.girl .eyes .glitter.left {
+    top: 145px;
+    left: 105px;
+    transform: rotate(-56deg);
+}
+
+.girl .eyes .pupil-black.left {
+    top: 139px;
+    left: 114px;
+}
+
+.girl .eyes .glitter-small.left {
+    top: 146px;
+    left: 135px;
+}
+
+.girl .eyes .tear.left {
+    top: 152px;
+    left: 85px;
+    transform: rotate(43deg);
+}
+
+.girl .eyes .tear.clear.left {
+    top: 154px;
+    left: 92px;
+    transform: rotate(40deg);
+}
+
+
+/* eye_right */
+.girl .eyes .eyelash.right-a {
+    top: 225px;
+    right: 105px;
+    transform: rotate(40deg);
+}
+
+.girl .eyes .lash-skin.right-a {
+    top: 217px;
+    right: 99px;
+    transform: rotate(-50deg);
+}
+
+.girl .eyes .eyelash.right-b {
+    top: 221px;
+    right: 100px;
+}
+
+.girl .eyes .lash-skin.right-b {
+    top: 213px;
+    right: 94px;
+}
+
+.girl .eyes .eyelash.right-c {
+    top: 215px;
+    right: 98px;
+    transform: rotate(10deg);
+}
+
+.girl .eyes .lash-skin.right-c {
+    top: 207px;
+    right: 92px;
+    transform: rotate(-100deg);
+}
+
+.girl .eyes .double-line.right {
+    top: 175px;
+    right: 109px;
+    border-radius: 100px 70px 50px 30px;
+    transform: rotate(31deg);
+}
+
+.girl .eyes .eye-skin.right {
+    top: 176px;
+    right: 108px;
+    border-radius: 100px 70px 50px 30px;
+    transform: rotate(24deg);
+}
+
+.girl .eyes .eye-line.right {
+    top: 184px;
+    right: 110px;
+    border-radius: 100px 70px 50px 30px;
+    transform: rotate(22deg);
+}
+
+
+.girl .eyes .white.right {
+    top: 187px;
+    right: 113px;
+    border-radius: 100px 70px 50px 30px;
+    transform: rotate(22deg);
+}
+
+.girl .eyes .pupil-shadow.big.right {
+    top: 191px;
+    right: 123px;
+}
+
+.girl .eyes .pupil-shadow.small.right {
+    top: 202px;
+    right: 147px;
+}
+
+.girl .eyes .pupil.right {
+    top: 190px;
+    right: 128px;
+}
+
+.girl .eyes .glitter.right {
+    top: 207px;
+    right: 155px;
+    transform: rotate(-60deg);
+}
+
+.girl .eyes .pupil-black.right {
+    top: 200px;
+    right: 139px;
+}
+
+.girl .eyes .glitter-small.right {
+    top: 208px;
+    right: 136px;
+}
+
+.girl .eyes .tear.right {
+    top: 236px;
+    right: 125px;
+    transform: rotate(15deg);
+}
+
+.girl .eyes .tear.clear.right {
+    top: 239px;
+    right: 130px;
+    transform: rotate(18deg);
+}
+
+/* eyes end */
+
+/* nose */
+/* nose setting */
+.girl .nose {
+    position: relative;
+}
+
+.girl .nose .ridge {
+    position: absolute;
+    transform: rotate(30deg);
+}
+
+.girl .nose .front {
+    position: absolute;
+    transform: rotate(30deg);
+}
+
+.girl .nose .nostril {
+    position: absolute;
+    width: 6px;
+    height: 2px;
+    background-color: #512b08;
+    border-radius: 5px;
+    transform: rotate(30deg);
+}
+
+/* nose design */
+.girl .nose .ridge.shadow {
+    width: 41px;
+    height: 73px;
+    top: 167px;
+    left: 156px;
+    background-color: var(--nose-shadow);
+    border-radius: 30px 30px 0px 0px;
+}
+
+.girl .nose .ridge.front {
+    width: 36px;
+    height: 81px;
+    top: 160px;
+    left: 160px;
+    background-color: var(--nose);
+    border-radius: 30px;
+}
+
+.girl .nose .ridge.highlight {
+    width: 9px;
+    height: 55px;
+    top: 175px;
+    left: 177px;
+    background-color: #fffaf2;
+    border-radius: 30px;
+}
+
+.girl .nose .front.shadow {
+    width: 39px;
+    height: 28px;
+    top: 204px;
+    left: 148px;
+    background-color: var(--nose-shadow);
+    border-radius: 40px 40px 10px 10px;
+}
+
+.girl .nose .front.nose {
+    width: 45px;
+    height: 30px;
+    top: 209px;
+    left: 142px;
+    background: var(--nose);
+    border-radius: 40px 40px 20px 20px;
+}
+
+.girl .nose .front.highlight {
+    width: 12px;
+    height: 4px;
+    top: 216px;
+    left: 169px;
+    background-color: #fffaf2;
+    border-radius: 10px 10px 5px 5px;
+    transform: rotate(40deg);
+}
+
+.girl .nose .nostril.left {
+    top: 225px;
+    left: 150px;
+}
+
+.girl .nose .nostril.right {
+    top: 234px;
+    left: 167px;
+}
+
+/* nose end */
+
+/* lips */
+/* lips setting */
+.girl .lips {
+    position: relative;
+}
+
+.girl .lips .upper {
+    position: absolute;
+    background-color: var(--lips);
+}
+
+.girl .lips .cover {
+    position: absolute;
+    width: 15px;
+    height: 17px;
+    background-color: var(--skin);
+}
+
+/* lips design */
+.girl .lips .upper.left {
+    width: 36px;
+    height: 37px;
+    top: 237px;
+    left: 110px;
+    border-radius: 50px 0px 0px 0px;
+    transform: rotate(13deg);
+}
+
+.girl .lips .upper.right {
+    width: 38px;
+    height: 36px;
+    top: 249px;
+    left: 138px;
+    border-radius: 0px 70px 0px 0px;
+    transform: rotate(30deg);
+}
+
+.girl .lips .mouth {
+    position: absolute;
+    width: 60px;
+    height: 17px;
+    top: 255px;
+    left: 114px;
+    background-color: #9a5353;
+    border-radius: 50px 50px 10px 10px;
+    transform: rotate(30deg);
+}
+
+.girl .lips .lower {
+    position: absolute;
+    width: 58px;
+    height: 19px;
+    top: 263px;
+    left: 109px;
+    background-color: var(--lips);
+    border-radius: 0px 0px 50px 50px;
+    transform: rotate(28deg);
+}
+
+.girl .lips .cover.a {
+    top: 279px;
+    left: 157px;
+    transform: rotate(-13deg);
+}
+
+.girl .lips .cover.b {
+    top: 280px;
+    left: 144px;
+    transform: rotate(deg);
+}
+
+.girl .lips .cover.c {
+    top: 278px;
+    left: 135px;
+    transform: rotate(15deg);
+}
+
+.girl .lips .cover.d {
+    top: 275px;
+    left: 126px;
+    transform: rotate(25deg);
+}
+
+.girl .lips .cover.e {
+    top: 272px;
+    left: 120px;
+    transform: rotate(30deg);
+}
+
+.girl .lips .cover.f {
+    top: 267px;
+    left: 112px;
+    transform: rotate(40deg);
+}
+
+.girl .lips .cover.g {
+    top: 260px;
+    left: 105px;
+    transform: rotate(55deg);
+}
+
+.girl .lips .cover.h {
+    top: 250px;
+    left: 102px;
+    transform: rotate(-10deg);
+}
+
+.girl .lips .gloss {
+    position: absolute;
+    width: 16px;
+    height: 4px;
+    top: 270px;
+    left: 142px;
+    background-color: rgba(255, 255, 255, 0.67);
+    border-radius: 10px;
+    transform: rotate(28deg);
+}
+
+/* lips end */
+
+/* detail */
+/* detail setting */
+.girl .detail {
+    position: relative;
+}
+
+.girl .detail .arm {
+    position: absolute;
+    background-color: var(--pink);
+}
+
+.girl .detail .hand {
+    position: absolute;
+    width: 28px;
+    height: 40px;
+    background-color: var(--skin-shadow);
+}
+
+/* detail design */
+.girl .detail img {
+    position: absolute;
+    width: 134px;
+    height: 213px;
+    top: 270px;
+    left: 110px;
+    transform: rotate(74deg);
+    animation: bear 2s 1s infinite linear alternate;
+}
+
+.girl .detail .arm.left {
+    width: 39px;
+    height: 45px;
+    top: 370px;
+    left: 75px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 5px 5px 0px;
+    transform: rotate(2deg);
+}
+
+.girl .detail .hand.left {
+    top: 374px;
+    left: 114px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 50px 50px 0px;
+    transform: rotate(2deg);
+}
+
+.girl .detail .arm.right {
+    width: 49px;
+    height: 45px;
+    top: 380px;
+    left: 222px;
+    box-shadow: -10px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 0px 25px 5px;
+}
+
+.girl .detail .hand.right {
+    top: 382px;
+    left: 194px;
+    box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px 0px 0px 50px;
+    transform: rotate(1deg);
+}
+
+/* detail end*/
